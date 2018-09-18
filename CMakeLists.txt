@@ -13,6 +13,7 @@ set(TARGET_SOURCES
   src/irrXML.h
   )
 
+remove_definitions(-DWIN32)
 add_library(irrXML "${TARGET_SOURCES}")
 
 #### install 
@@ -41,8 +42,6 @@ configure_package_config_file(
   "${project_config}"
   INSTALL_DESTINATION "${config_install_dir}"
   )
-
-remove_definitions(-D_WIN32)
 
 install(
   TARGETS irrXML
