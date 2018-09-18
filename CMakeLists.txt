@@ -42,7 +42,7 @@ configure_package_config_file(
   INSTALL_DESTINATION "${config_install_dir}"
   )
 
-remove_definitions(-D_DEBUG)
+remove_definitions(-D_WIN32)
 
 install(
   TARGETS irrXML
