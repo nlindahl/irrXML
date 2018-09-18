@@ -42,6 +42,8 @@ configure_package_config_file(
   INSTALL_DESTINATION "${config_install_dir}"
   )
 
+remove_definitions(-D_DEBUG)
+
 install(
   TARGETS irrXML
   EXPORT "${targets_export_name}"
